@@ -1,9 +1,10 @@
+import { Pefil } from "./pages/Pefil"
 
 export const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+     <Pefil/> 
+    </>
   )
 }
 
