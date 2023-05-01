@@ -115,6 +115,7 @@
 /*label de tecnologias*/
 .label-linkedin, .labal-Github, .labal-sitioWeb{
     /*ACORDATE QUE TENES QUE CAMBIAR EL STYLE*/
+    color:red
 }
 
 /*inputs de tecnologias*/
