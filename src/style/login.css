@@ -1,0 +1,149 @@
+/* Importo letras para css desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* 
+357dc0
+daf1fa
+254a87
+fbf0ed
+f6cbe6
+ */
+
+/* Creación de variables como colores y familia de letras */
+:root {
+    --color-primario: #FFFFFF;
+    --color-celeste: #daf1fa;
+    --color-azul: #357DC0;
+    --color-azul-hover: #2264a1;
+    --color-gris-claro: #dadada;
+    --color-negro: #1b1b1b;
+    --texto: 'Lato', sans-serif;
+}
+
+/* Caracteristicas generales que tendrá toda la página para resetearlo */
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--color-celeste);
+    font-family: var(--texto);
+}
+
+.formulario {
+    background-color: var(--color-primario);
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 40%;
+    border-top: inset 2px var(--color-gris-claro);
+    border-radius: 2rem 0 2rem 0;
+}
+
+.titulo {
+    color: var(--color-azul);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor-info {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-input label,
+input {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    text-decoration: none;
+}
+
+.label-input input {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.4rem;
+    margin-bottom: 2rem;
+    border: solid 1px var(--color-azul);
+}
+
+
+.registrar {
+    margin: 1rem auto;
+    text-align: center;
+    width: 70%;
+    background-color: var(--color-azul);
+    padding: 0.5rem;
+    color: var(--color-primario);
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.olvide {
+    margin: 1rem auto;
+    text-align: center;
+    width: 70%;
+    background-color: var(--color-celeste);
+    padding: 0.5rem;
+    color: var(--color-negro);
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+.registrar:hover {
+    background-color: var(--color-azul-hover);
+    cursor: pointer;
+}
+.olvide:hover {
+    background-color: var(--color-azul);
+    color: var(--color-primario);
+    cursor: pointer;
+}
+.consultas,
+.consultas a {
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.no-registrado {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-negro);
+    border-bottom: solid 1px;
+    display: inline-block;
+    margin: 1rem 41%;
+}
+
+.consultas {
+    width: 100%;
+}
+
+/* Estilos para tamaños menor a 768px */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .formulario {
+        width: 83%;
+    }
+
+    .contenedor-info {
+        width: 85%;
+    }
+
+    .registrar, .olvide {
+        width: 100%;
+        border-radius: 1px;
+    }
+
+}
