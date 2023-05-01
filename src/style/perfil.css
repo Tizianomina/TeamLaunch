@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.perfil-container{
+    width: 100%;
+    padding: 5px;
+}
+
+/*Contenedor formulario*/
+.perfil-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*SECCION DE DATOS PERSONALES*/
+/*contenedor de datos personales nombre, apellido, descripcion y foto personal*/
+.perfil-seccion-datosPersonales{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*contenedor de la foto y el link*/
+.perfil-container-photo{
+    width: 200px;
+    height: 200px;
+}
+
+.perfil-img{
+    width: 100%;
+    height: 100%;
+}
+
+.perfil-img-link{
+    text-align: center;
+}
+
+/*contendor de label e inputs de nombre, apellido y textarea*/
+.perfil-container-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+/*contendor del label e input del nombre y apellido*/
+.perfil-description-person{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Contenedores de nombre y apellido (labels e inputs)*/
+.input-group-name, .input-group-lastname{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Contenedor del label y textarea*/
+.input-group-description{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*inputs del nombre y apellido*/
+.perfil-input-name, .perfil-input-lastname{
+    width: 100%;
+    padding: 16px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+/*textarea*/
+.perfil-textarea-description{
+    margin-top: 10px;
+    width: 100%;
+}
+
+/*inputs textarea de nombre, apellido y descripcion*/
+.perfil-input-name, .perfil-input-lastname, .perfil-textarea-description{
+    border-radius: 10px;
+    border: solid 1px #357DC0;
+}
+
+/*-----------------------*/
+
+/*SECCCION DE DATOS PERSONALES*/
+
+.perfil-seccion-redesPersonales{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*contenedor de redes sociales*/
+.perfil-contenedor-redes{
+    margin: auto;
+    width: 83%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*label de tecnologias*/
+.label-linkedin, .labal-Github, .labal-sitioWeb{
+    /*ACORDATE QUE TENES QUE CAMBIAR EL STYLE*/
+}
+
+/*inputs de tecnologias*/
+.input-linkedin, .input-Github, .input-sitioWeb{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    
+}
+
+.input-linkedin, .input-Github, .input-sitioWeb, .input-tecnologia{
+    height: 30px;
+    border-radius: 10px;
+    border: solid 1px #357DC0;
+}
+
+/*contenedor de tecnologias*/
+.perfil-tecnologias{
+    outline: solid;
+    margin: 20px auto;
+    width: 83%;
+}
+
+/*input de tecnologia*/
+.input-tecnologia{
+    width: 25%;
+    margin: 10px 20px 0 0;
+    padding: 16px;
+
+}
+
+/*btn para agregar tecnologia*/
+.agregar-tecnologia-btn{
+    height: 30px;
+    width: 50px;
+
+}
+
+/*SECCION DE IDIOMAS*/
+.contenedor-idiomas{
+    margin: auto;
+    width: 83%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.contendor-idiomas-checkbox{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contendor-ingles, .contenedor-espanol{
+    font-size: 20px;
+}
+
+#español, #ingles{
+    margin-right: 10px;
+}
+
+.btn-cv{
+    background-color: #35c081;
+    border:none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.finalizar{
+    width: 50%;
+    height: 40px;
+    margin: 50px auto;
+    background-color: #357DC0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+/*Diseño responsivo del perfil-seccion-datosPersonales*/
+
+
+@media (max-width: 600px) {
+    
+    .perfil-seccion-datosPersonales{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil-container-description{
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .perfil-description-person{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-group-name, .input-group-lastname{
+        width: 100%;
+    }
+
+    /*Responsivo de las redes y agregar tecnologias*/
+
+    .perfil-contenedor-redes, .perfil-tecnologias{
+        width: 100%;
+    }
+
+    .input-tecnologia{
+        width: 70%;
+        margin: 10px 25px 0 0;
+
+    }
+
+    /*Responsivo de idiomas*/
+
+    .contenedor-idiomas{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contendor-idiomas-checkbox{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn-cv{
+        margin: auto;
+        width: 200px;
+        height: 35px;
+    }
+
+    .finalizar{
+        width: 100%;
+    }
+}
+  
+
+  
+  
+  
