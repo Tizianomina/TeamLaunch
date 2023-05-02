@@ -19,7 +19,7 @@ export const Pefil = () => {
                 <label htmlFor="name" className="label-name">
                   Name
                 </label>
-                <input type="text" className="perfil-input-name" id="name" />
+                <input type="text" className="perfil-input-name" id="name" placeholder="Juan"/>
               </div>
 
               <div className="input-group-lastname">
@@ -30,6 +30,7 @@ export const Pefil = () => {
                   type="text"
                   className="perfil-input-lastname"
                   id="lastname"
+                  placeholder="Perez"
                 />
               </div>
             </div>
@@ -56,17 +57,17 @@ export const Pefil = () => {
             <label htmlFor="" className="label-linkedin">
               Linkedin
             </label>
-            <input type="text" className="input-linkedin" />
+            <input type="text" className="input-linkedin" placeholder="https://www.linkedin.com/in/JuanPerez" />
 
             <label htmlFor="" className="labal-Github">
               Github
             </label>
-            <input type="text" className="input-Github" />
+            <input type="text" className="input-Github" placeholder="https://github.com/JuanPerez"/>
 
             <label htmlFor="" className="labal-sitioWeb">
               Sitio web personal
             </label>
-            <input type="text" className="input-sitioWeb" />
+            <input type="text" className="input-sitioWeb" placeholder="https://Juan-Perez.com"/>
           </article>
 
           <article className="perfil-tecnologias">
