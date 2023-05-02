@@ -1,0 +1,204 @@
+/* Importo letras para css desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* 
+357dc0
+daf1fa
+254a87
+fbf0ed
+f6cbe6
+ */
+
+/* Creación de variables como colores y familia de letras */
+:root {
+    --color-primario: #FFFFFF;
+    --color-celeste: #daf1fa;
+    --color-azul: #357DC0;
+    --color-azul-hover: #2264a1;
+    --color-gris-claro: #dadada;
+    --color-negro: #1b1b1b;
+    --color-rosa: #f6cbe6;
+    --color-rojo: #f85e5e;
+    --color-rojo-hover: #fc4343;
+    --texto: 'Lato', sans-serif;
+}
+
+/* Caracteristicas generales que tendrá toda la página para resetearlo */
+*,
+html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primario);
+    font-family: var(--texto);
+}
+
+.contenedor {
+    margin: 5rem;
+}
+
+.cabeza-proyecto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+.imagen {
+    width: 280px;
+    height: 280px;
+    margin-right: 4rem;
+    min-width: 280px;
+}
+
+.info-basica {
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.desProy {
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+.descargar {
+    display: inline;
+    text-align: center;
+    border: solid 1px var(--color-azul);
+    padding: 0.4rem;
+    color: var(--color-negro);
+    text-decoration: none;
+}
+
+.descargar:hover {
+    border: solid 2px var(--color-azul-hover);
+}
+
+/* Sección de participantes */
+
+.participantes {
+    outline: solid;
+    font-size: 1.9rem;
+}
+
+li {
+    font-size: 1.9rem;
+    margin: 1.9rem 0;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1rem;
+
+}
+
+ul {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    list-style-type: none;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.yo {
+    background-color: var(--color-gris-claro);
+    display: flex;
+    justify-content: space-between;
+}
+
+.salir {
+    font-size: 2.2rem;
+    margin: .5rem 3rem .5rem 0;
+    padding: 1rem;
+    width: 12%;
+    border-radius: 50px;
+    background-color: var(--color-rojo);
+    font-weight: bold;
+    border: solid 2px var(--color-negro);
+    cursor: pointer;
+}
+
+.salir:hover {
+    background-color: var(--color-rojo-hover);
+}
+
+.unirse {
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: var(--color-azul);
+    border-radius: 30px;
+    border: solid 1px var(--color-negro);
+    width: 20%;
+    min-width: 20%;
+}
+
+.unirse:hover {
+    background-color: var(--color-azul-hover);
+}
+
+.unirse a {
+    color: var(--color-primario);
+}
+
+@media (max-width: 768px) {
+    .imagen {
+        width: 280px;
+        height: 280px;
+        margin-right: 0;
+        min-width: 280px;
+    }
+
+    .cabeza-proyecto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor {
+        margin: 1.5rem;
+    }
+
+    .info-basica {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .info-basica p, a {
+        margin-top: 1rem;
+    }
+    .desProy {
+        text-align: left;
+        width: 100%;
+        font-size: .9rem;
+    }
+    .unirse {
+        padding: .5rem;
+        width: 80%;
+        margin-top: 4rem;
+    }
+    li {
+        font-size: 1.4rem;
+    }
+    ul {
+        font-size: 1rem;
+    }
+    .salir {
+        width: 18%;
+        padding: .4rem;
+        font-size: 1.6rem;
+        margin: .2rem 1rem .2rem 0;
+    }
+}
