@@ -1,264 +1,313 @@
+/* Importo letras para css desde google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-primario: #ffffff;
+  --color-celeste: #daf1fa;
+  --color-azul: #357dc0;
+  --color-azul-hover: #2264a1;
+  --color-gris-claro: #dadada;
+  --color-negro: #1b1b1b;
+  --color-verde-cv: #35c081;
+  --color-verde-cv-hover: #1c9c63;
+  --texto: "Lato", sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--texto);
 }
 
-.perfil-container{
-    width: 100%;
-    padding: 5px;
+.perfil-container {
+  width: 100%;
+  padding: 5px;
 }
 
 /*Contenedor formulario*/
-.perfil-form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.perfil-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*SECCION DE DATOS PERSONALES*/
 /*contenedor de datos personales nombre, apellido, descripcion y foto personal*/
-.perfil-seccion-datosPersonales{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.perfil-seccion-datosPersonales {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
 
 /*contenedor de la foto y el link*/
-.perfil-container-photo{
-    width: 200px;
-    height: 200px;
+.perfil-container-photo {
+  width: 200px;
+  height: 200px;
 }
 
-.perfil-img{
-    width: 100%;
-    height: 100%;
+.perfil-img {
+  width: 100%;
+  height: 100%;
 }
 
-.perfil-img-link{
-    text-align: center;
+.perfil-img-link {
+  text-align: center;
 }
 
 /*contendor de label e inputs de nombre, apellido y textarea*/
-.perfil-container-description{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.perfil-container-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-
-
-
 /*contendor del label e input del nombre y apellido*/
-.perfil-description-person{
-    display: flex;
-    justify-content: space-between;
+.perfil-description-person {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-name,
+.label-lastname,
+.label-description {
+  font-weight: bold;
 }
 
 /*Contenedores de nombre y apellido (labels e inputs)*/
-.input-group-name, .input-group-lastname{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
+.input-group-name,
+.input-group-lastname {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Contenedor del label y textarea*/
-.input-group-description{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+.input-group-description {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*inputs del nombre y apellido*/
-.perfil-input-name, .perfil-input-lastname{
-    width: 100%;
-    padding: 16px;
-    height: 10px;
-    margin-top: 10px;
+.perfil-input-name,
+.perfil-input-lastname {
+  width: 100%;
+  padding: 16px;
+  height: 10px;
+  margin-top: 10px;
 }
 
 /*textarea*/
-.perfil-textarea-description{
-    margin-top: 10px;
-    width: 100%;
+.perfil-textarea-description {
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px;
 }
 
 /*inputs textarea de nombre, apellido y descripcion*/
-.perfil-input-name, .perfil-input-lastname, .perfil-textarea-description{
-    border-radius: 10px;
-    border: solid 1px #357DC0;
+.perfil-input-name,
+.perfil-input-lastname,
+.perfil-textarea-description {
+  border-radius: 10px;
+  border: solid 1px var(--color-azul);
 }
 
 /*-----------------------*/
 
 /*SECCCION DE DATOS PERSONALES*/
 
-.perfil-seccion-redesPersonales{
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.perfil-seccion-redesPersonales {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*contenedor de redes sociales*/
-.perfil-contenedor-redes{
-    margin: auto;
-    width: 83%;
+.perfil-contenedor-redes {
+  margin: auto;
+  width: 83%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*label de tecnologias*/
-.label-linkedin, .labal-Github, .labal-sitioWeb{
-    /*ACORDATE QUE TENES QUE CAMBIAR EL STYLE*/
-    color:red
+.label-linkedin,
+.labal-Github,
+.labal-sitioWeb {
+  /*ACORDATE QUE TENES QUE CAMBIAR EL STYLE*/
+  font-weight: bold;
 }
 
 /*inputs de tecnologias*/
-.input-linkedin, .input-Github, .input-sitioWeb{
-    margin: 10px 0 10px 0;
-    width: 100%;
-    
+.input-linkedin,
+.input-Github,
+.input-sitioWeb {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  padding: 10px;
 }
 
-.input-linkedin, .input-Github, .input-sitioWeb, .input-tecnologia{
-    height: 30px;
-    border-radius: 10px;
-    border: solid 1px #357DC0;
+.input-linkedin,
+.input-Github,
+.input-sitioWeb,
+.input-tecnologia {
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px var(--color-azul);
+}
+
+.input-linkedin:focus,
+.input-Github:focus,
+.input-sitioWeb:focus,
+.input-tecnologia:focus,
+.perfil-input-name:focus,
+.perfil-input-lastname:focus,
+.perfil-textarea-description:focus {
+  outline: solid 2px var(--color-azul-hover);
+  border: none;
 }
 
 /*contenedor de tecnologias*/
-.perfil-tecnologias{
-    outline: solid;
-    margin: 20px auto;
-    width: 83%;
+.perfil-tecnologias {
+  border: solid 2px var(--color-azul);
+  margin: 20px auto;
+  width: 83%;
+  padding: 5px;
 }
 
 /*input de tecnologia*/
-.input-tecnologia{
-    width: 25%;
-    margin: 10px 20px 0 0;
-    padding: 16px;
-
+.input-tecnologia {
+  width: 25%;
+  margin: 10px 20px 0 0;
+  padding: 16px;
 }
 
 /*btn para agregar tecnologia*/
-.agregar-tecnologia-btn{
-    height: 30px;
-    width: 50px;
-
+.agregar-tecnologia-btn {
+  height: 30px;
+  width: 50px;
 }
 
 /*SECCION DE IDIOMAS*/
-.contenedor-idiomas{
-    margin: auto;
-    width: 83%;
+.contenedor-idiomas {
+  margin: auto;
+  width: 83%;
 
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.contendor-idiomas-checkbox{
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.contendor-idiomas-checkbox {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.contendor-ingles, .contenedor-espanol{
-    font-size: 20px;
+.contendor-ingles,
+.contenedor-espanol {
+  font-size: 20px;
 }
 
-#español, #ingles{
-    margin-right: 10px;
+#español,
+#ingles {
+  margin-right: 10px;
+  transform: scale(1.5);
 }
 
-.btn-cv{
-    background-color: #35c081;
-    border:none;
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    color: #fff;
-    font-size: 20px;
+.btn-cv {
+  background-color: var(--color-verde-cv);
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
 }
 
-.finalizar{
-    width: 50%;
-    height: 40px;
-    margin: 50px auto;
-    background-color: #357DC0;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
+.finalizar {
+  width: 50%;
+  height: 40px;
+  margin: 50px auto;
+  background-color: var(--color-azul);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
 
+.finalizar,
+.btn-cv:hover {
+  cursor: pointer;
+}
+
+.btn-cv:hover {
+  background-color: var(--color-verde-cv-hover);
+}
+
+.finalizar:hover {
+  background-color: var(--color-azul-hover);
 }
 
 /*Diseño responsivo del perfil-seccion-datosPersonales*/
 
-
 @media (max-width: 600px) {
-    
-    .perfil-seccion-datosPersonales{
-        display: flex;
-        flex-direction: column;
-    }
+  .perfil-seccion-datosPersonales {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .perfil-container-description{
-        margin-top: 50px;
-        width: 100%;
-    }
-    
-    .perfil-description-person{
-        display: flex;
-        flex-direction: column;
-    }
+  .perfil-container-description {
+    margin-top: 50px;
+    width: 100%;
+  }
 
-    .input-group-name, .input-group-lastname{
-        width: 100%;
-    }
+  .perfil-description-person {
+    display: flex;
+    flex-direction: column;
+  }
 
-    /*Responsivo de las redes y agregar tecnologias*/
+  .input-group-name,
+  .input-group-lastname {
+    width: 100%;
+  }
 
-    .perfil-contenedor-redes, .perfil-tecnologias{
-        width: 100%;
-    }
+  /*Responsivo de las redes y agregar tecnologias*/
 
-    .input-tecnologia{
-        width: 70%;
-        margin: 10px 25px 0 0;
+  .perfil-contenedor-redes,
+  .perfil-tecnologias {
+    width: 100%;
+  }
 
-    }
+  .input-tecnologia {
+    width: 70%;
+    margin: 10px 25px 0 0;
+  }
 
-    /*Responsivo de idiomas*/
+  /*Responsivo de idiomas*/
 
-    .contenedor-idiomas{
-        width: 100%;
-        flex-direction: column;
-    }
+  .contenedor-idiomas {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .contendor-idiomas-checkbox{
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .contendor-idiomas-checkbox {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .btn-cv{
-        margin: auto;
-        width: 200px;
-        height: 35px;
-    }
+  .btn-cv {
+    margin: auto;
+    width: 200px;
+    height: 35px;
+  }
 
-    .finalizar{
-        width: 100%;
-    }
+  .finalizar {
+    width: 100%;
+  }
 }
-  
-
-  
-  
-  
