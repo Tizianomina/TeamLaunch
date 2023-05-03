@@ -9,11 +9,11 @@ export const Login = () => {
         <div className='contenedor-info'>
           <div className='label-input'>
             <label htmlFor="email">E-mail:</label>
-            <input type="email" placeholder="Enter your email" />
+            <input id='email' type="email" placeholder="Enter your email" />
           </div>
           <div className='label-input'>
-            <label htmlFor="email">Password:</label>
-            <input type="password" placeholder="Enter your password" />
+            <label htmlFor="password">Password:</label>
+            <input id="password" type="password" placeholder="Enter your password" />
           </div>
           <div className='consultas'>
             <input className='registrar' type="submit" value='Login' />
