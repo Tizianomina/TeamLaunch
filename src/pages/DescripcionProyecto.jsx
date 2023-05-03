@@ -30,7 +30,7 @@ export const DescripcionProyecto = () => {
           <ul>
             <li className='yo'>
               <div>
-                Participants: Yo
+                Participants: Me
                 <ul>
                   FrontEnd React
                 </ul>
@@ -59,7 +59,7 @@ export const DescripcionProyecto = () => {
             </li>
           </ul>
         </div>
-        <button className='unirse'><a href="#">Unirme</a></button>
+        <button className='unirse'><a href="#">Join me</a></button>
       </section>
     </>
 

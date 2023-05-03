@@ -1,0 +1,98 @@
+/* Importo letras para css desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* 
+357dc0
+daf1fa
+254a87
+fbf0ed
+f6cbe6
+ */
+
+/* Creación de variables como colores y familia de letras */
+:root {
+    --color-primario: #FFFFFF;
+    --color-celeste: #daf1fa;
+    --color-azul: #357DC0;
+    --color-azul-hover: #2264a1;
+    --color-gris-claro: #dadada;
+    --color-negro: #1b1b1b;
+    --color-rosa: #f6cbe6;
+    --color-rojo: #f85e5e;
+    --color-rojo-hover: #fc4343;
+    --texto: 'Lato', sans-serif;
+}
+
+/* Caracteristicas generales que tendrá toda la página para resetearlo */
+*,
+html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primario);
+    font-family: var(--texto);
+}
+
+.inscripcion-contenedor-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+}
+
+.inscripcion-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.inscripcion-contenedor label{
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+.inscripcion-contenedor input, .inscripcion-contenedor select {
+    font-size: 1.7rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.inscripcion-inscribirme {
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: .8rem 1.8rem;
+    cursor: pointer;
+    background-color: var(--color-azul);
+    border-radius: 30px;
+    border: solid 1px var(--color-negro);
+    width: 20%;
+    min-width: 20%;
+    color: var(--color-primario);
+}
+.inscripcion-inscribirme:hover {
+    background-color: var(--color-azul-hover);
+}
+
+
+@media (max-width: 768px) {
+    .inscripcion-contenedor label{
+        font-size: 1.5rem;
+    }
+    .inscripcion-contenedor input, .inscripcion-contenedor select {
+        font-size: 1rem;
+    }
+    .inscripcion-contenedor-todo {
+        height: 310px;
+        margin: 2rem;
+    }
+    .inscripcion-inscribirme {
+        padding: .5rem;
+        width: 60%;
+        margin-top: 0rem;
+    }
+    
+}
