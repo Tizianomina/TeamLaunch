@@ -1,9 +1,8 @@
 
 export const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <footer className="footer-contenedor">TEAMLAUNCH</footer>
+
   )
 }
 
